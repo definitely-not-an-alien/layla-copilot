@@ -25,7 +25,7 @@ class ExampleMentraOSApp extends AppServer {
     // requires microphone permission to be set in the developer console
     session.events.onTranscription((data) => {
       if (data.isFinal) {
-        session.layouts.showTextWall("Hello world: " + data.text, {
+        session.layouts.showTextWall("*\n|\n|\n|\n|"+ data.text, {
           view: ViewType.MAIN,
           durationMs: 3000
         });
