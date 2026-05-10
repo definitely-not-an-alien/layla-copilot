@@ -12,5 +12,6 @@ RUN bun install --frozen-lockfile
 RUN pipx install uvicorn
 COPY run.sh run.sh
 COPY . .
+EXPOSE 8000
 RUN ["chmod", "+x", "run.sh"]
 CMD ./run.sh
